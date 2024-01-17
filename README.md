@@ -1,5 +1,7 @@
 # electron_vue
 
+electron 13 + vue 3 实现控制台有vue-devtools插件。（无其他页面，可这直接做脚手架）
+
 ## Project setup
 ```
 yarn install
