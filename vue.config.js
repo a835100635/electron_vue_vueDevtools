@@ -3,7 +3,6 @@ module.exports = defineConfig({
   transpileDependencies: true,
   // 代理
   devServer: {
-    open: true,
     port: 8080,
     // 热更新
     hot: true,
