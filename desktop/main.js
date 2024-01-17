@@ -17,7 +17,7 @@ app.on('ready', async () => {
 
   installDevtools();
 
-  // 注册协议
+  // 注册协议 通过 <a href="app://some/path">Open Electron App</a> 调起本地应用
   createProtocol('app');
 
   loginWindowInstance = LoginWindow.createWindow();
