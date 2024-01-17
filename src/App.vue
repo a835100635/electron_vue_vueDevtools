@@ -1,17 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <button @click="handle">登录</button>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import { loginAction } from '@/api/common';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+const handle = () => {
+  loginAction({
+    phoneNumber:1, code:1, areaCode:1, accessToken:1, tokenType:1
+  });
 }
+
 </script>
 
 <style>
